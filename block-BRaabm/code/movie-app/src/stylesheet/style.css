@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   V2.0 | 20110126
+   License: none (public domain) */
+
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   
+   /* HTML5 display-role reset for older browsers */
+   
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   body {
+     line-height: 1;
+   }
+   ol,
+   ul {
+     list-style: none;
+   }
+   blockquote,
+   q {
+     quotes: none;
+   }
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+     content: "";
+     content: none;
+   }
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+
+/* Custom Styling */
+
+/* Flex */
+
+.flex{
+  display: flex;
+}
+
+/* Justify Content */
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-between{
+  justify-content:  space-between;
+}
+
+.justify-around{
+  justify-content:  space-around;
+}
+
+.justify-evenly{
+  justify-content:  space-evenly;
+}
+
+/* Align Items */
+
+.align-start{
+  align-items: flex-start;
+}
+
+.align-end{
+  align-items: flex-end;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.align-stretch{
+  align-items: stretch;
+}
+
+.align-baseline{
+  align-items:baseline;
+}
+
+/* Align Content */
+.align-content-start{
+  align-content: flex-start;
+}
+
+.align-content-end{
+  align-content: flex-end;
+}
+
+.align-content-center{
+  align-content: center;
+}
+
+.align-content-stretch{
+  align-content: stretch;
+}
+
+.align-content-around{
+  align-content:space-around;
+}
+
+.align-content-between{
+  align-content:space-between;
+}
+
+/* Flex Wrap */
+
+.flex-wrap-yes{
+  flex-wrap: wrap;
+}
+
+.flex-wrap-no{
+  flex-wrap:nowrap;
+}
+
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex Direction */
+
+.flex-direction-column{
+  flex-direction:column;
+}
+
+.flex-direction-column-reverse{
+  flex-direction:column-reverse;
+}
+
+.flex-direction-row{
+  flex-direction:row;
+}
+
+.flex-direction-row-reverse{
+  flex-direction:row-reverse;
+}
+
+/* Align Self */
+
+.align-self-start{
+  align-self:flex-start;
+}
+
+.align-self-end{
+  align-self:flex-end;
+}
+
+.align-self-center{
+  align-self: center;
+}
+
+.align-self-auto{
+  align-self: auto;
+}
+
+.align-self-stretch{
+  align-self:stretch;
+}
+
+.align-self-baseline{
+  align-self:baseline;
+}
+
+
+/* Custom Styles */
+
+.poster-container{
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: .4rem;
+}
+
+.full-width{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.full-width {
+  transition: transform .5s ease;
+}
+
+.full-width:hover {
+  transform: scale(1.2);
+}
+
+body{
+  background-color: black;
+  padding: 2rem ;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  font-family:'Nunito', sans-serif;
+}
+
+
+article{
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: rgb(129, 57, 57);
+}
+
+li{
+  flex: 0 1 23%; 
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+ul{
+  width: 100%;
+  flex-wrap:  wrap;
+  padding: 1rem;
+}
+
+h2{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: .5rem 0;
+}
+
+time{
+  font-size: .9rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.adj{
+  height: 1.5rem;
+}
+p{
+  padding: .5rem;
+}
+
+h1{
+font-size: 2.5rem;
+font-weight: 700;
+text-align: center; 
+color:#fff;
+margin-bottom: 1rem;
+margin-top: 2rem;
+}
+.info{
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+  padding: .25rem .57rem;
+  display: inline-block;
+  background-color: rgb(7, 7, 7);
+  color: white;
+}
+
+.info{
+  display: none;
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: transform .5s ease;
+}
+
+li:hover .info{
+  display: inline;  
+}
+
+.pop-up{
+  position: fixed;
+  top:0;
+  left:5rem;
+  /* bottom: 5rem; */
+  right: 5rem;
+  background-color: rgb(25, 25, 25);
+  border-radius: 1rem;
+  color: #fff;
+  padding: 1.6rem;
+}
+
+h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+
+}
+
+
+.hideBtn{
+  position: relative;
+  top: -1.5rem;
+  left: 100%;
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+  padding: .25rem .57rem;
+  display: inline-block;
+  background-color: rgb(70, 70, 70);
+  color: white;
+  font-weight: 700;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 25%;
+  border-radius: .5rem;
+  border: 1px solid white;
+  height: 12rem;
+  overflow:auto;
+}
+
+.slider::-webkit-scrollbar{
+  display: none;
+}
+
+.img-container{
+  width: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+  height: 12rem;
+}
