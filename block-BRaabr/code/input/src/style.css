@@ -1,0 +1,30 @@
+body{
+  background-color: black;
+  color: #fff;
+}
+form{
+  background-color: gray;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: 5px solid rgb(247, 240, 240); 
+  width:45%
+  
+}
+.form {
+  display: flex;
+  margin-left: 50%;
+  margin-top: -29.4%;
+}
+input{
+  margin-bottom: 2rem;
+}
+textarea{
+  margin-bottom: 2rem;
+}
+.file{
+  border: 1px solid gray;
+  background-color: white;
+}
