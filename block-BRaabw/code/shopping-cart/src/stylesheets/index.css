@@ -1,0 +1,688 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   V2.0 | 20110126
+   License: none (public domain) */
+
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   
+   /* HTML5 display-role reset for older browsers */
+   
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   body {
+     line-height: 1;
+   }
+   ol,
+   ul {
+     list-style: none;
+   }
+   blockquote,
+   q {
+     quotes: none;
+   }
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+     content: "";
+     content: none;
+   }
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+   
+/* Custom Styles */
+
+/* Flex */
+
+.flex{
+  display: flex;
+}
+
+/* Justify Content */
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-between{
+  justify-content:  space-between;
+}
+
+.justify-around{
+  justify-content:  space-around;
+}
+
+.justify-evenly{
+  justify-content:  space-evenly;
+}
+
+/* Align Items */
+
+.align-start{
+  align-items: flex-start;
+}
+
+.align-end{
+  align-items: flex-end;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.align-stretch{
+  align-items: stretch;
+}
+
+.align-baseline{
+  align-items:baseline;
+}
+
+/* Align Content */
+.align-content-start{
+  align-content: flex-start;
+}
+
+.align-content-end{
+  align-content: flex-end;
+}
+
+.align-content-center{
+  align-content: center;
+}
+
+.align-content-stretch{
+  align-content: stretch;
+}
+
+.align-content-around{
+  align-content:space-around;
+}
+
+.align-content-between{
+  align-content:space-between;
+}
+
+/* Flex Wrap */
+
+.flex-wrap-yes{
+  flex-wrap: wrap;
+}
+
+.flex-wrap-no{
+  flex-wrap:nowrap;
+}
+
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex Direction */
+
+.flex-direction-column{
+  flex-direction:column;
+}
+
+.flex-direction-column-reverse{
+  flex-direction:column-reverse;
+}
+
+.flex-direction-row{
+  flex-direction:row;
+}
+
+.flex-direction-row-reverse{
+  flex-direction:row-reverse;
+}
+
+/* Align Self */
+
+.align-self-start{
+  align-self:flex-start;
+}
+
+.align-self-end{
+  align-self:flex-end;
+}
+
+.align-self-center{
+  align-self: center;
+}
+
+.align-self-auto{
+  align-self: auto;
+}
+
+.align-self-stretch{
+  align-self:stretch;
+}
+
+.align-self-baseline{
+  align-self:baseline;
+}
+
+
+/* Shop */
+.container{
+  max-width: 1200px;
+  padding:  1rem;
+  margin: 0 auto;
+}
+
+.full-width{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.flex-24{
+  flex: 0 1 24%;
+  height: 95vh;
+}
+
+.flex-24 header{
+  width: 90%;
+}
+
+.flex-75 header{
+  width: 95%;
+  
+}
+
+.flex-75{
+  flex: 0 1 75%;
+
+}
+
+.jjt{
+  /* overflow: auto; */
+  height: 100%;
+}
+
+.flex::-webkit-scrollbar{
+  display: none;
+}
+
+header{
+  padding:1rem ;
+  padding-bottom:1rem;
+  font-style: italic;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border-radius: .5rem;
+}
+
+header p{
+  font-weight: bold;
+}
+
+header label{
+  margin-right: .5rem;
+}
+
+header select{
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+aside div{
+  padding-left: 1rem;
+}
+
+li{
+  margin-left: .5rem;
+  margin-top: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(200, 200, 200);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+li:hover {
+  border: 1px solid black;
+}
+
+/* Items */
+.item{
+  width: 15.25rem;
+  text-align: center;
+  position: relative;
+  border-radius:.35rem ;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.item:hover{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.item button{
+  background-color: black;
+  font-family:'Nunito', sans-serif;
+  color: white;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.item button:hover{
+  background-color: rgb(235,190,0);
+  cursor: pointer;
+}
+
+.item .underline{
+  display: inline-block;
+  width: 40px;
+  margin-bottom: .5rem;
+  margin-top: 1.4rem;
+  border-bottom: 3px solid rgb(235,190,0) ;
+}
+
+.item p{
+  margin: .5rem auto;
+  margin-bottom: .75rem;
+  font-size: 1.1rem;
+}
+
+.item .doller{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.item h4{
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1rem;
+  font-weight: 500;
+  height: 3rem;
+}
+
+.item .shipping{
+  background-color: black;
+  display: inline-block;
+  color: white;
+  padding: .5rem .75rem;
+  font-size: .75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.item div{
+  width: 100%;
+  overflow: hidden;
+}
+
+.item img{
+  width: 100%;
+  object-fit: cover;
+}
+.image {
+  transition: transform .3s ease;
+}
+.image :hover {
+  transform: scale(2);
+
+}
+/* Cart */
+
+.cart{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30rem;
+  text-align: center;
+  
+}
+.cart-toggle{
+   position: absolute;
+   top:0;
+   right:30rem;
+   background-color: black;
+  height: 60px;
+  width: 50px;
+  font-size: 2rem;
+  color: white;
+  padding-left: .7rem;
+  padding-right: .45rem;
+}
+.cart-toggle img{
+margin-left: -1rem
+}
+
+.cart-toggle:hover{
+  cursor: pointer;
+}
+
+.cart-toggle-hide{
+  position: absolute;
+   top:0;
+   right:0rem;
+}
+
+
+.count{
+  background-color: rgb(235,190,0);
+  height: 1.25rem;
+  width: 1.25rem;
+  font-size: .9rem;
+  font-weight: 600;
+  border-radius: 50%;
+  position: absolute;
+  top:2.2rem;
+  left: 2.2rem;
+}
+
+.cart-head{
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  position: relative;
+  padding-top: .95rem;
+  padding-left: .5rem;
+}
+
+/* Cart Items */
+aside .cart {
+  padding-left: 0;
+}
+
+.items li{
+  box-sizing: border-box;
+  border-radius: 0;
+  border: 1px solid rgb(49, 49, 49);
+  flex: 0 1 90%;
+  background-color: black;
+  margin-left: -1rem;
+  margin:  0rem auto;
+  height: 6rem;
+  padding: .5rem;
+  padding-left: 0;
+}
+
+.items li div{
+  box-sizing: border-box;
+  height: 98%;
+  overflow: hidden;
+}
+
+.flex-18{
+  flex: 0 1 20%;
+}
+
+.flex-20{
+  flex: 0 1 20%;
+}
+
+
+.flex-60{
+  flex: 0 1 60%;
+}
+
+.items .flex-60 h2{
+     color: white;
+     font-size: 1.1rem; 
+     font-weight: 600;
+     text-align: left;
+}
+
+.items{
+  max-height: 47rem;
+  overflow: auto;
+  margin-top: 2rem;
+}
+
+.items::-webkit-scrollbar{
+  display: inline-block;
+}
+
+/* Works on Firefox */
+.items{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.1) orange;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.items::-webkit-scrollbar {
+  width: 8px;
+}
+
+.items::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.1);
+}
+
+.items::-webkit-scrollbar-thumb {
+  background-color:rgb(235,190,0);
+  border-radius: 20px;
+  border: 3px solid rgba(255,255,255,.1);
+}
+
+.items .flex-60 p{
+  color: gray;
+  font-size: 1.1rem; 
+  font-weight: 400;
+  text-align: left;
+  margin-top: .25rem;
+}
+
+.items .flex-18 .kattam{
+  color: rgb(60, 60, 60);
+  font-size: 1.2rem; 
+  font-weight: 700;
+  padding-top: .5rem;
+}
+
+.items .flex-18 .kattam:hover{
+  cursor: pointer;
+  color: white;
+}
+
+.items .flex-18 .paise{
+  color: rgb(235,190,0);
+  font-size: 1.2rem; 
+  font-weight: 700;
+  text-align: left;
+  margin-top: .25rem;
+}
+
+.flex-100{
+  width: 100%;
+  flex: 0 1 100%;
+}
+
+.items li{
+  margin-bottom: 1rem;
+}
+
+.items .flex-18 .btnba{
+  color: white;
+  border: 1px solid gray;
+  display: inline-block;
+  width: 1rem;
+  height:1rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; 
+  font-weight: 700;
+  text-align: left;
+  margin-top: .25rem;
+}
+
+.btnba:hover{
+  cursor: pointer;
+}
+
+
+.checkout{
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+}
+
+.checkout button{
+  background-color: rgb(50,50,50);
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: .5rem 1rem;
+  border:none;
+  outline: none;
+  border-radius: .2rem;
+}
+.checkout button:hover{
+  cursor: pointer;
+}
+
+.checkout h6{
+  color:rgb(49, 49, 49);
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+}
+
+.checkout h6 span{
+  color: rgb(235,190,0);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 14rem;
+}
+
+.actives{
+  background-color: black;
+  color: white;
+}
+
+
