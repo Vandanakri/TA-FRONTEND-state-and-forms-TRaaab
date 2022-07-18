@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   V2.0 | 20110126
+   License: none (public domain) */
+
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   
+   /* HTML5 display-role reset for older browsers */
+   
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   body {
+     line-height: 1;
+   }
+   ol,
+   ul {
+     list-style: none;
+   }
+   blockquote,
+   q {
+     quotes: none;
+   }
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+     content: "";
+     content: none;
+   }
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+
+
+/* Flex */
+
+.flex{
+  display: flex;
+}
+
+/* Justify Content */
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-between{
+  justify-content:  space-between;
+}
+
+.justify-around{
+  justify-content:  space-around;
+}
+
+.justify-evenly{
+  justify-content:  space-evenly;
+}
+
+/* Align Items */
+
+.align-start{
+  align-items: flex-start;
+}
+
+.align-end{
+  align-items: flex-end;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.align-stretch{
+  align-items: stretch;
+}
+
+.align-baseline{
+  align-items:baseline;
+}
+
+/* Align Content */
+.align-content-start{
+  align-content: flex-start;
+}
+
+.align-content-end{
+  align-content: flex-end;
+}
+
+.align-content-center{
+  align-content: center;
+}
+
+.align-content-stretch{
+  align-content: stretch;
+}
+
+.align-content-around{
+  align-content:space-around;
+}
+
+.align-content-between{
+  align-content:space-between;
+}
+
+/* Flex Wrap */
+
+.flex-wrap-yes{
+  flex-wrap: wrap;
+}
+
+.flex-wrap-no{
+  flex-wrap:nowrap;
+}
+
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex Direction */
+
+.flex-direction-column{
+  flex-direction:column;
+}
+
+.flex-direction-column-reverse{
+  flex-direction:column-reverse;
+}
+
+.flex-direction-row{
+  flex-direction:row;
+}
+
+.flex-direction-row-reverse{
+  flex-direction:row-reverse;
+}
+
+/* Align Self */
+
+.align-self-start{
+  align-self:flex-start;
+}
+
+.align-self-end{
+  align-self:flex-end;
+}
+
+.align-self-center{
+  align-self: center;
+}
+
+.align-self-auto{
+  align-self: auto;
+}
+
+.align-self-stretch{
+  align-self:stretch;
+}
+
+.align-self-baseline{
+  align-self:baseline;
+}
+
+form{
+  max-width:  500px;
+  width: 100%;
+  padding: 1rem;
+  margin:  2rem auto;
+  border: 2px solid #fff;
+  border-radius: .4rem;
+  text-align: center;
+}
+
+form input{
+  width: 98.5%;
+  margin-bottom: 1rem;
+}
+
+form label{
+  display: inline-block;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+h1{
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+h3{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color:#fff;
+  font-weight: 600;
+}
+
+textarea{
+  width: 100%;
+
+}
+
+input[type='checkbox']{
+  width: 20px;
+}
+
+div{
+  margin-top: 1rem;
+  text-align: start;
+}
+
+button{
+  margin: 1rem;
+}
+
+form{
+  position: relative;
+}
+
+.btna{
+position: absolute;
+bottom: -.5rem;
+left: 47%;
+transform: translate(-50%);
+}
+body {
+  background-color: black;
+}
