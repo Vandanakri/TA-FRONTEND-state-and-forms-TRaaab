@@ -17,9 +17,8 @@
     <script type="text/babel">
 
         let root = document.getElementById('root');
-        let labels = ['basketball', 'cricket', 'laptop', 'phone', 'pubg', 'tiger'];
-
-        class Image extends React.Component {
+    
+        class App extends React.Component {
             constructor(props) {
                 super(props);
                 this.state = {
@@ -28,29 +27,29 @@
             }
 
             render() {
-                return <>
+                let names = ['basketball', 'cricket', 'laptop', 'phone', 'pubg', 'tiger'];
+                return (    
+                <>
                     <div className="button-container">
-                        {labels.map(label => {
-                            return (
-                                <button className={(this.state.active === label) ? 'active' : ''}
-                                onClick={() => {
-                                    this.setState({
-                                        active: label,
-                                    })
-
-                                }}>{label}</button>
-                            );
-                        })}
+                        { names.map((name, i) => {
+                               return ( <button onClick={() => this.setState({
+                                 active: name  
+                                })
+                            } key={i} className={this.state.active === name ? "active" : ""}>{name.toUpperCase()}</button>
+                               )
+                            })}
                     </div>
                     <div className="img-container">
                         <img className="full-width" src={`../assets/${this.state.active}.jpg`} alt="" />
                     </div>
                 </>
+                )
             }
         }
 
-        ReactDOM.render(<Image />, root)
+        ReactDOM.render(<App />, root)
     </script>
 </body>
 
 </html>
+
