@@ -1,5 +1,4 @@
 import Shop from "./Shop";
-
 function App(){
     return(<>
      <Shop/>

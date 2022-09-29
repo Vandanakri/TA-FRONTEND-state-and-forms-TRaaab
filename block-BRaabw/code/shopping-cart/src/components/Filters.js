@@ -10,7 +10,7 @@ class Filters extends React.Component{
     };
     
     render(){
-        let sizes = this.props.products.reduce((acc, cv)=>{
+        let sizes = this.props.products.products.reduce((acc, cv) => {
             acc.push(cv.availableSizes);
             return acc; 
         }, []).flat(Infinity);
